@@ -1,0 +1,161 @@
+.shadow-sm {
+  box-shadow: 0 0 0 rgba(255, 255, 255, 0.075) !important;
+}
+/* Фиксированный хедер */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 10px 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+/* Отступ для всего контента под хедером */
+body {
+  margin-top: 60px; /* Высота хедера */
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.wrapper {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.el-title {
+  font-size: 80px !important;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-right: 200px !important;
+}
+
+.im {
+  width: 100%;
+  max-width: 1920px;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.15);
+  box-shadow: 0px 0px 14px 0px rgba(34, 60, 80, 0.15);
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.mgb {
+  margin-bottom: 32px;
+}
+
+/* Фиксированная боковая навигация */
+#nav-container {
+  position: fixed;
+  top: 60px; /* Под хедером */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 60px); /* Полная высота экрана минус хедер */
+  overflow-y: auto;
+  padding: 1%;
+  transition: all 0.3s ease;
+}
+
+/* Прокручивающаяся область контента */
+#content-container {
+  margin-left: 298px;
+  min-height: 500px;
+  padding: 20px;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 8px;
+  font-weight: 600;
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #afafaf !important;
+}
+
+.active {
+  color: #6d6d6d !important;
+}
+
+.nav-link-2 {
+  padding-left: 40px;
+  font-weight: 400;
+}
+
+.page-title {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 98%;
+  }
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+  #nav-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 20px;
+  }
+
+  #content-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  /* На мобильных тоже нужен отступ под хедером */
+  body {
+    margin-top: 60px;
+  }
+}
+
+/*.error-table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid red;
+}
+
+.error-table tbody td {
+    padding: 5px 10px;
+}*/
