@@ -21,6 +21,7 @@
             <a class="nav-link nav-link-2 <?php echo (isset($_GET['anchor']) && $_GET['anchor'] === 'section2') ? 'active' : ''; ?>" href="?page=error&anchor=section2">Ошибки валидации</a>
             <a class="nav-link nav-link-2 <?php echo (isset($_GET['anchor']) && $_GET['anchor'] === 'section3') ? 'active' : ''; ?>" href="?page=error&anchor=section3">Серверные ошибки и предупреждения</a>
             <a class="nav-link nav-link-2 <?php echo (isset($_GET['anchor']) && $_GET['anchor'] === 'section4') ? 'active' : ''; ?>" href="?page=error&anchor=section4">Бизнес-уведомления</a>
+            <a class="nav-link nav-link-2 <?php echo (isset($_GET['anchor']) && $_GET['anchor'] === 'section5') ? 'active' : ''; ?>" href="?page=error&anchor=section5">Бизнес-ошибки</a>
         <?php endif; ?>
     </div>
 </nav>
