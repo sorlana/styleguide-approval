@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8" />
     <title>SPA приложение</title>
-    <link rel="icon" href="./fav1.ico">
+    <link rel="icon" href="./fav1.ico" id="favicon">
+    <script>
+        // Определяем среду выполнения
+        if (window.location.hostname === 'localhost' || 
+            window.location.hostname.includes('local')) {
+            // Локальная среда
+            document.getElementById('favicon').href = './fav1-local.ico';
+        } else {
+            // Продакшен среда
+            document.getElementById('favicon').href = './fav1.ico';
+        }
+    </script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
